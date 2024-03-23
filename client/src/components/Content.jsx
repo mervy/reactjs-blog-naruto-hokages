@@ -13,19 +13,7 @@ export const Content = (props) => {
             .then((data) => setItems(data));
     }, []);
 
-    return (
-        // <article className="container">
-        //     {items.map((item) => (
-        //         <section key={item.id}>
-        //             <div>
-        //                 <img src={`../img/${item.image}`} alt={item.name} />
-        //             </div>
-        //             <div>
-        //                 <p>{item.description}</p>
-        //             </div>
-        //         </section>
-        //     ))}
-        // </article>
+    return (      
         <div className="container col-xxl-8 px-4 py-5">
             {items.map((item) => (
                 <div className="row flex-lg-row-reverse align-items-center g-5 py-5" key={item.id}>
